@@ -1,0 +1,117 @@
+.homeHero {
+  min-height: max(480px, calc(100dvh - 64px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 0;
+}
+.homeHero h1 {
+  font-size: clamp(32px, 6vw, 50px);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ivory);
+  margin-top: 10px;
+}
+.homeHero p {
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 58ch;
+  margin-top: 14px;
+}
+.homeCtaRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.howSteps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 6px;
+}
+.howStep {
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 18px;
+}
+.howStep .num {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 26px;
+  color: var(--rose-bright);
+}
+.howStep h4 {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ivory);
+  margin: 6px 0 0;
+}
+.howStep p {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+  margin-top: 6px;
+}
+.featureCard {
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 18px;
+}
+.featureCard h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--rose-bright);
+  font-family: var(--font-body);
+  margin: 0;
+}
+.featureCard p {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 6px 0 0;
+}
+
+.teaserCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin-top: 22px;
+}
+.teaserSwatch {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  flex: none;
+  border: 2px solid var(--surface-3);
+  background: var(--surface-3);
+}
+.teaserMeta {
+  flex: 1;
+  min-width: 160px;
+}
+.teaserMeta .name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--ivory);
+}
+.teaserMeta .sub {
+  font-size: 11px;
+  color: var(--muted-2);
+  margin-top: 2px;
+}

@@ -1,0 +1,127 @@
+.btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13.5px;
+  letter-spacing: 0.01em;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.15s;
+  text-decoration: none;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, var(--rose-bright), var(--rose));
+  color: #221a17;
+}
+.btnPrimary:hover {
+  filter: brightness(1.08);
+}
+.btnPrimary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  filter: none;
+}
+
+.btnGhost {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--ivory);
+}
+.btnGhost:hover {
+  border-color: var(--rose);
+  color: var(--rose-bright);
+}
+
+.btnRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.panel {
+  background: var(--surface-1);
+  border: 1px solid var(--border-soft);
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+.panel h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ivory);
+}
+.panelHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.panelSub {
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 60ch;
+}
+
+.note {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--sage);
+  border: 1px solid rgba(147, 168, 137, 0.35);
+  background: rgba(147, 168, 137, 0.08);
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+.noteDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--sage);
+  flex: none;
+}
+
+.siteFooter {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--muted-2);
+  margin-top: 8px;
+  padding: 16px 0 40px;
+}
+.siteFooter .sageDot {
+  color: var(--sage);
+}
+.footerLinks {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.footerLinks a,
+.footerLinks button {
+  font-family: var(--font-eyebrow);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+}
+.footerLinks a:hover,
+.footerLinks button:hover {
+  color: var(--rose-bright);
+}

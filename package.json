@@ -1,0 +1,28 @@
+{
+  "name": "aurafit-nextjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1",
+    "@techstark/opencv-js": "^5.0.0-release.1",
+    "@types/node": "^26.6.2",
+    "@types/react": "^18.3.31",
+    "next": "^15.5.24",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.4.5"
+  },
+  "overrides": {
+    "postcss": "8.5.28"
+  }
+}

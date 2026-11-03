@@ -1,0 +1,65 @@
+.sitenav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 40;
+  background: rgba(11, 10, 14, 0.86);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-soft);
+  padding: 14px 20px;
+}
+
+.row {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.wordmark {
+  font-family: var(--font-eyebrow);
+  font-size: 15px;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+  color: var(--ivory);
+  text-decoration: none;
+}
+
+.wordmark span {
+  color: var(--rose);
+}
+
+.navLinks {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.navLink {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 7px 14px;
+  text-decoration: none;
+  transition: 0.15s;
+}
+
+.navLink:hover {
+  color: var(--rose-bright);
+}
+
+.navLink:focus-visible {
+  outline: 2px solid var(--rose-bright);
+  outline-offset: 2px;
+}
+
+.navLinkActive {
+  color: #221a17;
+  background: var(--rose);
+}
